@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - 'main'
-    paths:
-      - Dockerfile
-      - '.github/workflows/**'
+#    paths:
+#      - Dockerfile
+#      - '.github/workflows/**'
 
 env:
   IMAGE_NAME: "maks1ms/renovatebot-full"
