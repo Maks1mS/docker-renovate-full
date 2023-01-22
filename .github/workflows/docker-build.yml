@@ -9,8 +9,8 @@ on:
       - '.github/workflows/**'
 
 env:
-  IMAGE_NAME: "simaofsilva/renovatebot-docker-renovate"
-  REPO_URL: "https://github.com/renovatebot/docker-renovate"
+  IMAGE_NAME: "maks1ms/renovatebot-full"
+  REPO_URL: "https://github.com/Maks1mS/docker-renovate-full"
   LOCAL_PATH: "/tmp/docker-renovate"
 
 
@@ -60,8 +60,7 @@ jobs:
           platforms: linux/arm64/v8
           push: true
           tags: |
-            ${{ env.IMAGE_NAME }}:${{ steps.version.outputs.VERSION }}-slim
-            ${{ env.IMAGE_NAME }}:slim
+            ${{ env.IMAGE_NAME }}:${{ steps.version.outputs.VERSION }}
             ${{ env.IMAGE_NAME }}:latest
 
   # delete_old_runs:
