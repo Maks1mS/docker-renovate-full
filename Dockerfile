@@ -22,14 +22,11 @@ RUN install-tool java 17.0.6+10
 # renovate: datasource=gradle-version versioning=gradle
 RUN install-tool gradle 7.6
 
-# renovate: datasource=github-releases lookupName=containerbase/erlang-prebuild versioning=docker
-RUN install-tool erlang 25.2.0.0
-
 # renovate: datasource=docker versioning=docker
 RUN install-tool elixir 1.14.3
 
-# renovate: datasource=github-releases lookupName=containerbase/php-prebuild
-RUN install-tool php 8.2.1
+# # renovate: datasource=github-releases lookupName=containerbase/php-prebuild
+# RUN install-tool php 8.2.1
 
 # renovate: datasource=github-releases lookupName=composer/composer
 RUN install-tool composer 2.5.1
@@ -37,8 +34,8 @@ RUN install-tool composer 2.5.1
 # renovate: datasource=golang-version
 RUN install-tool golang 1.19.5
 
-# renovate: datasource=github-releases lookupName=containerbase/python-prebuild
-RUN install-tool python 3.11.1
+# # renovate: datasource=github-releases lookupName=containerbase/python-prebuild
+# RUN install-tool python 3.11.1
 
 # renovate: datasource=pypi
 RUN install-pip pipenv 2022.12.19
@@ -55,8 +52,8 @@ RUN install-pip pip-tools 6.12.1
 # renovate: datasource=docker versioning=docker
 RUN install-tool rust 1.66.1
 
-# renovate: datasource=github-releases lookupName=containerbase/ruby-prebuild
-RUN install-tool ruby 3.2.0
+# # renovate: datasource=github-releases lookupName=containerbase/ruby-prebuild
+# RUN install-tool ruby 3.2.0
 
 # renovate: datasource=rubygems versioning=ruby
 RUN install-tool bundler 2.4.5
